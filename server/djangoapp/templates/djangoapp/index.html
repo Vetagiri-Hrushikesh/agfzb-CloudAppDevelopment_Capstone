@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Dealership Review</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -14,12 +14,23 @@
 </head>
 
     <body>
-    <!-- Remove this line the first time you edit this file -->
-     This is the index page of your Django app!
-    <!--Add a nav bar here -->
-
-    <!--Add a dealer table here -->
-
+        <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#">
+                    <img src="https://logodownload.org/wp-content/uploads/2014/04/mercedes-benz-logo-8.png" alt="Logo" width="30" height="28" class="d-inline-block align-text-top">
+                    Mercedes Benz
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-item nav-link active text-white" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-item nav-link text-white" href="{% url 'djangoapp:about' %}">About us</a>
+                  <a class="nav-item nav-link text-white" href="{% url 'djangoapp:contact' %}">Contact us</a>
+                </div>
+              </div>
+          </nav>
     </body>
 
 </html>

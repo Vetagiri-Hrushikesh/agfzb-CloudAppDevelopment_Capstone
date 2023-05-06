@@ -5,6 +5,10 @@ from . import views
 
 app_name = 'djangoapp'
 urlpatterns = [
+        path('static-template/', views.static_template_view, name='static_template'),
+        path('about/', views.about_template_view, name='about'),
+        path('contact/', views.contact_template_view, name='contact'),
+
     # route is a string contains a URL pattern
     # view refers to the view function
     # name the URL
@@ -26,3 +30,5 @@ urlpatterns = [
     # path for add a review view
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
